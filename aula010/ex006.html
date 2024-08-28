@@ -28,17 +28,25 @@
         area.addEventListener('mouseenter', entrar)
         area.addEventListener('mouseout', sair)
 
-        function clicar() {
-            area.innerText = 'Clicou!!'
-            area.style.backgroundColor = 'lightgreen'
-        }
         function entrar() {
-            area.innerText = 'Entrou!!'
+            area.innerText = 'Clique Aqui!!'
             area.style.backgroundColor = 'lightgray'
+            area.style.borderRadius = '20px'
+            area.style.transition = '0.2s ease-in-out'
+            area.style.cursor = 'pointer'
         }
+
+        function clicar() {
+            area.style.backgroundColor = 'lightgreen'
+            area.style.borderRadius = '30px'
+            area.style.transition = '0.2s ease-in-out'
+            area.style.cursor = 'initial'
+        }
+        
         function sair() {
-            area.innerText = 'Saiu!!'
+            area.innerText = 'Passe o mouse...'
             area.style.backgroundColor = 'lightblue'
+            area.style.borderRadius = '0'
         }
     </script>
 </body>
