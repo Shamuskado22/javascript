@@ -16,7 +16,8 @@ function counter() {
         end = Number(end.value)
         step = Number(step.value)
         if (step <= 0) {
-            res.innerHTML = 'Valor mínimo de <strong>Passo</strong> é 1'
+            window.alert('Passo inválido! Passo agora é 1')
+            step = 1
         }
         if (start < end) {
 	        for (var go = start; go <= end; go += step) {
