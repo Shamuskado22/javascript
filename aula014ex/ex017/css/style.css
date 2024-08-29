@@ -1,0 +1,24 @@
+body {
+    background-color: skyblue;
+    font: 400 1.2em Arial;
+    text-align: center;
+    color: darkslateblue;
+}
+
+section {
+    background-color: white;
+    border-radius: 12px;
+    padding: 16px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.226);
+    text-align: left;
+}
+
+#tabu {
+    font: 400 0.7em Arial;
+}
+
+footer {
+    font-style: italic;
+}
